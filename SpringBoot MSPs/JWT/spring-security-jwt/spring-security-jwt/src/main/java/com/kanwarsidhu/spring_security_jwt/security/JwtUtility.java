@@ -21,7 +21,7 @@ public class JwtUtility {
     @Value("${jwt.expiration}")
     private int jwtExpirationMs;
 
-    private SecretKey Key;
+    private SecretKey key;
 
     @PostConstruct
     public void init() {
